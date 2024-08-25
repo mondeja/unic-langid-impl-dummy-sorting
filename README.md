@@ -2,7 +2,7 @@
 
 - Previous results (`.dedup()` + `.sort_unstable()`): *dominators-with-sort.txt* (13057 bytes)
 - Results after commenting out `.sort_unstable()`: *dominators-without-sort.txt* (3595 bytes)
-- Results after patch: *dominators-after-patch.txt* 
+- Results after patch: *dominators-after-patch.txt* (3620 bytes)
 
 Search for `unic_langid_impl::LanguageIdentifier::from_bytes` in the files.
 
