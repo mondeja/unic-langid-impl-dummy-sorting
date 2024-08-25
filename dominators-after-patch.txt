@@ -1,0 +1,453 @@
+ Retained Bytes │ Retained % │ Dominator Tree
+────────────────┼────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          58246 ┊     48.30% ┊ table[0]
+          32899 ┊     27.28% ┊   ⤷ elem[0]
+          23826 ┊     19.76% ┊       ⤷ prueba::main::h74f69969b9c23e66
+          15969 ┊     13.24% ┊           ⤷ core::ptr::drop_in_place<leptos_dom::View>::h6654fcbe000ff12a
+          14338 ┊     11.89% ┊               ⤷ <leptos_reactive::node::Disposer as core::ops::drop::Drop>::drop::h95695d2646876dc7
+           8298 ┊      6.88% ┊                   ⤷ leptos_reactive::runtime::Runtime::dispose_node::hd79eec096de397de
+           5608 ┊      4.65% ┊                       ⤷ leptos_reactive::runtime::Runtime::cleanup_node::hcb7b84c51626f5ff
+           2181 ┊      1.81% ┊                           ⤷ hashbrown::raw::RawTable<T,A>::reserve_rehash::h8175544cd81c3a17
+             82 ┊      0.07% ┊                               ⤷ hashbrown::raw::Fallibility::capacity_overflow::h3f6675b1b88cc6a3
+             34 ┊      0.03% ┊                               ⤷ hashbrown::raw::Fallibility::alloc_err::h2a212a750787088b
+           1086 ┊      0.90% ┊                           ⤷ core::hash::BuildHasher::hash_one::h252c96d5537b2865
+            625 ┊      0.52% ┊                               ⤷ <core::hash::sip::Hasher<S> as core::hash::Hasher>::write::h9dae6ebdf347ada4
+              6 ┊      0.00% ┊                               ⤷ type[6]: (i32, i32) -> i64
+            350 ┊      0.29% ┊                           ⤷ hashbrown::rustc_entry::<impl hashbrown::map::HashMap<K,V,S,A>>::rustc_entry::h825c2b4652a4f746
+            350 ┊      0.29% ┊                           ⤷ hashbrown::rustc_entry::<impl hashbrown::map::HashMap<K,V,S,A>>::rustc_entry::hcc69db36b58906d3
+           1525 ┊      1.26% ┊                       ⤷ indexmap::set::IndexSet<T,S>::swap_remove::h8116851219c1948c
+            487 ┊      0.40% ┊                           ⤷ hashbrown::raw::inner::RawTable<T,A>::remove_entry::hf234694634322f44
+              7 ┊      0.01% ┊                               ⤷ type[17]: (i32, i32, i64, i32) -> nil
+            365 ┊      0.30% ┊                           ⤷ hashbrown::raw::inner::RawTable<T,A>::erase_entry::ha99f3617d48c2227
+              7 ┊      0.01% ┊                               ⤷ type[21]: (i32, i64, i32) -> i32
+            107 ┊      0.09% ┊                           ⤷ alloc::vec::Vec<T,A>::swap_remove::assert_failed::hadf7a5208251ce69
+           5979 ┊      4.96% ┊                   ⤷ std::sys::thread_local::static_local::LazyStorage<T>::initialize::hcc7341b65334e91a
+           2211 ┊      1.83% ┊                       ⤷ leptos_reactive::runtime::Runtime::new::h342205dbead75d5e
+            598 ┊      0.50% ┊                           ⤷ <leptos_reactive::hydration::SharedContext as core::default::Default>::default::hcafc2c51ba049654
+            116 ┊      0.10% ┊                               ⤷ core::ops::function::FnOnce::call_once::hedfe4d78783962f5
+            400 ┊      0.33% ┊                           ⤷ alloc::raw_vec::RawVec<T,A>::grow_one::hd5df39f918cf2ec9
+            197 ┊      0.16% ┊                               ⤷ alloc::raw_vec::finish_grow::hfeb43334618c036a
+            501 ┊      0.42% ┊                       ⤷ <hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop::h0d9e8b00d1bc74bf
+            440 ┊      0.36% ┊                       ⤷ <hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop::hdf6428cbd14653d6
+            366 ┊      0.30% ┊                       ⤷ <hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop::hdbf23e621d73a903
+            337 ┊      0.28% ┊                       ⤷ <slotmap::basic::Slot<T> as core::ops::drop::Drop>::drop::hce512df92d29dfdb
+            298 ┊      0.25% ┊                       ⤷ <slotmap::basic::Slot<T> as core::ops::drop::Drop>::drop::h6f6d96e4095ed8c0
+            175 ┊      0.15% ┊                       ⤷ <alloc::rc::Rc<T,A> as core::ops::drop::Drop>::drop::h24133294c6fa772d
+             49 ┊      0.04% ┊                       ⤷ <alloc::vec::Vec<T,A> as core::ops::drop::Drop>::drop::hfe36c2aad310e909
+            160 ┊      0.13% ┊               ⤷ core::ptr::drop_in_place<leptos_dom::Comment>::ha306b1106bc10fde
+           3620 ┊      3.00% ┊           ⤷ unic_langid_impl::LanguageIdentifier::from_bytes::h04cb0ee2f73ed2d6
+           3502 ┊      2.90% ┊               ⤷ unic_langid_impl::parser::parse_language_identifier::h86a1a90fbea9c666
+            525 ┊      0.44% ┊                   ⤷ unic_langid_impl::subtags::variant::Variant::from_bytes::h7ac8b4a0090ae145
+            404 ┊      0.34% ┊                   ⤷ alloc::raw_vec::RawVec<T,A>::grow_one::h7482647adced322e
+            203 ┊      0.17% ┊                       ⤷ alloc::raw_vec::finish_grow::he4ba82cf114d018d
+            402 ┊      0.33% ┊                   ⤷ unic_langid_impl::subtags::region::Region::from_bytes::h8e22003dab5863ee
+            391 ┊      0.32% ┊                   ⤷ unic_langid_impl::subtags::language::Language::from_bytes::h38d2f49ad56edbda
+            107 ┊      0.09% ┊                   ⤷ alloc::vec::Vec<T,A>::insert::assert_failed::h8e7424c68290c1f3
+           1902 ┊      1.58% ┊           ⤷ <leptos_dom::View as leptos_dom::Mountable>::get_mountable_node::hcce2a6bdeea42c3c
+            495 ┊      0.41% ┊               ⤷ leptos_dom::prepare_to_move::h5925a5819b5e514d
+             69 ┊      0.06% ┊                   ⤷ web_sys::features::gen_Node::Node::next_sibling::hd18444b5bdf85638
+             41 ┊      0.03% ┊                       ⤷ import wbg::__wbg_nextSibling_f6396d6fd0b97830
+             51 ┊      0.04% ┊                   ⤷ js_sys::Object::is::h86123cbe089df2f4
+             32 ┊      0.03% ┊                       ⤷ import wbg::__wbg_is_009b1ef508712fda
+            466 ┊      0.39% ┊               ⤷ <leptos_dom::View as leptos_dom::Mountable>::get_opening_node::h32fcf974974e602e
+            338 ┊      0.28% ┊               ⤷ <leptos_dom::components::dyn_child::DynChildRepr as leptos_dom::Mountable>::get_mountable_node::h64d4ee1f9f7bcdc3
+             51 ┊      0.04% ┊                   ⤷ web_sys::features::gen_Node::Node::child_nodes::he4b049ea766ba322
+             40 ┊      0.03% ┊                       ⤷ import wbg::__wbg_childNodes_031aa96d5e3d21b0
+             47 ┊      0.04% ┊                   ⤷ web_sys::features::gen_NodeList::NodeList::length::hee25d54ac7153fc4
+             36 ┊      0.03% ┊                       ⤷ import wbg::__wbg_length_4919f4a62b9b1e94
+            221 ┊      0.18% ┊               ⤷ <leptos_dom::components::each::EachRepr as leptos_dom::Mountable>::get_mountable_node::hb3b5be7b71ca2976
+            146 ┊      0.12% ┊               ⤷ <leptos_dom::components::ComponentRepr as leptos_dom::Mountable>::get_mountable_node::ha1b02133895242ae
+            511 ┊      0.42% ┊           ⤷ leptos_dom::html::p::he5264885b0ff9ac6
+            443 ┊      0.37% ┊               ⤷ std::thread::local::LocalKey<T>::with::h039e62bcc8f4fe83
+            109 ┊      0.09% ┊                   ⤷ web_sys::features::gen_Node::Node::clone_node::hdd2c1961eb9f09a5
+             39 ┊      0.03% ┊                       ⤷ import wbg::__wbg_cloneNode_629a1b180e91c467
+             24 ┊      0.02% ┊                   ⤷ core::ptr::drop_in_place<core::result::Result<(),web_sys::features::gen_HtmlElement::HtmlElement>>::hc7a1199ce2b59cff
+              9 ┊      0.01% ┊               ⤷ core::ops::function::FnOnce::call_once::h38a709df7f5860ef
+            351 ┊      0.29% ┊           ⤷ <unic_langid_impl::LanguageIdentifier as core::fmt::Display>::fmt::hf1ea8827533ce70b
+             22 ┊      0.02% ┊               ⤷ <core::fmt::Formatter as core::fmt::Write>::write_char::h13fd090f1c198264
+             16 ┊      0.01% ┊               ⤷ tinystr::int_ops::Aligned4::len::h0fc082e3e8fb0128
+            265 ┊      0.22% ┊           ⤷ leptos_dom::Text::new::hcfcd813ef2c2f66e
+            115 ┊      0.10% ┊               ⤷ web_sys::features::gen_Document::Document::create_text_node::h7df57c002733d7bd
+             44 ┊      0.04% ┊                   ⤷ import wbg::__wbg_createTextNode_8bce33cf33bf8f6e
+            116 ┊      0.10% ┊           ⤷ web_sys::features::gen_Node::Node::append_child::h805810c8081e892b
+             41 ┊      0.03% ┊               ⤷ import wbg::__wbg_appendChild_ac45d1abddf1b89b
+            107 ┊      0.09% ┊           ⤷ core::panicking::panic_bounds_check::h125c3a5dd588952f
+             92 ┊      0.08% ┊           ⤷ core::option::expect_failed::h9d0c8588efc786aa
+             62 ┊      0.05% ┊           ⤷ web_sys::features::gen_Document::Document::body::hef279b4db9eff134
+             34 ┊      0.03% ┊               ⤷ import wbg::__wbg_body_b3bb488e8e54bf4b
+             44 ┊      0.04% ┊           ⤷ leptos_dom::document::hc1842fe4860704c4
+             17 ┊      0.01% ┊           ⤷ tinystr::int_ops::Aligned8::len::h560f9c42c37b3b4c
+            837 ┊      0.69% ┊       ⤷ core::fmt::Formatter::pad_integral::h3b852ddc8b8cc407
+             68 ┊      0.06% ┊           ⤷ core::fmt::Formatter::pad_integral::write_prefix::h745ddf5ae84995ed
+            735 ┊      0.61% ┊       ⤷ core::ops::function::FnOnce::call_once::hce1ab24bf9299c38
+            707 ┊      0.59% ┊           ⤷ std::sys::thread_local::static_local::LazyStorage<T>::initialize::h0d38cd32fe811104
+            265 ┊      0.22% ┊               ⤷ <hashbrown::raw::RawTable<T,A> as core::ops::drop::Drop>::drop::hf70736403dfbf39b
+            645 ┊      0.53% ┊       ⤷ <unic_langid_impl::errors::LanguageIdentifierError as core::fmt::Debug>::fmt::hfdeadc8c25606999
+            558 ┊      0.46% ┊           ⤷ core::fmt::Formatter::debug_tuple_field1_finish::hb01888b20f6b0ef5
+            332 ┊      0.28% ┊               ⤷ core::fmt::builders::DebugTuple::field::he873e7f98b10e813
+            557 ┊      0.46% ┊       ⤷ <core::fmt::builders::PadAdapter as core::fmt::Write>::write_str::hcfec69058de94528
+            530 ┊      0.44% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_char::h8d02ec1fda94bdf5
+            190 ┊      0.16% ┊           ⤷ alloc::raw_vec::RawVec<T,A>::grow_one::h2c802495b90fa0c1
+            530 ┊      0.44% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_char::h8d02ec1fda94bdf5
+            190 ┊      0.16% ┊           ⤷ alloc::raw_vec::RawVec<T,A>::grow_one::h6ed569757efac318
+            489 ┊      0.41% ┊       ⤷ <&T as core::fmt::Debug>::fmt::hadab0a424e309ee1
+            161 ┊      0.13% ┊           ⤷ core::fmt::num::<impl core::fmt::LowerHex for i32>::fmt::hc7a0e6a9514fbe85
+            160 ┊      0.13% ┊           ⤷ core::fmt::num::<impl core::fmt::UpperHex for i32>::fmt::h36254ed4f0240197
+            107 ┊      0.09% ┊           ⤷ core::slice::index::slice_start_index_len_fail::haed14a641365a080
+            384 ┊      0.32% ┊       ⤷ std::sys::thread_local::static_local::LazyStorage<T>::initialize::h6d352443ea3692f9
+             98 ┊      0.08% ┊           ⤷ web_sys::window::h50ca8ac80ee02b00
+             47 ┊      0.04% ┊               ⤷ import wbg::__wbg_instanceof_Window_5012736c80a01584
+             66 ┊      0.05% ┊           ⤷ web_sys::features::gen_Window::Window::document::hc7f6e8161d6d8b0f
+             38 ┊      0.03% ┊               ⤷ import wbg::__wbg_document_8554450897a855b9
+            349 ┊      0.29% ┊       ⤷ core::ops::function::FnOnce::call_once::haca1f946059810aa
+            148 ┊      0.12% ┊           ⤷ web_sys::features::gen_Document::Document::create_element::h8aac6268a27d206c
+             43 ┊      0.04% ┊               ⤷ import wbg::__wbg_createElement_5921e9eb06b9ec89
+             39 ┊      0.03% ┊           ⤷ core::ops::function::FnOnce::call_once::h26b04e2dfaeb39ac
+            345 ┊      0.29% ┊       ⤷ core::fmt::num::imp::fmt_u64::h19496ebfc7bf35d6
+              7 ┊      0.01% ┊           ⤷ type[25]: (i64, i32, i32) -> i32
+            262 ┊      0.22% ┊       ⤷ <std::panicking::begin_panic_handler::FormatStringPayload as core::panic::PanicPayload>::take_box::hf2b5cd6f8d65a6da
+            232 ┊      0.19% ┊       ⤷ <std::thread::local::AccessError as core::fmt::Debug>::fmt::hc32772e624fddc7c
+            134 ┊      0.11% ┊           ⤷ core::fmt::builders::DebugStruct::finish::hf6e5521a574f024f
+             47 ┊      0.04% ┊           ⤷ core::fmt::Formatter::debug_struct::h2bf181ded5dfeac1
+            205 ┊      0.17% ┊       ⤷ <wasm_bindgen::JsValue as core::fmt::Debug>::fmt::ha6b32724e1ae622e
+             30 ┊      0.02% ┊           ⤷ import wbg::__wbindgen_debug_string
+            197 ┊      0.16% ┊       ⤷ alloc::raw_vec::finish_grow::h31e7fee578c23b33
+            193 ┊      0.16% ┊       ⤷ alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle::he98548b32778c863
+            193 ┊      0.16% ┊       ⤷ alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle::hba9ff791c6825a00
+            190 ┊      0.16% ┊       ⤷ core::ops::function::FnOnce::call_once::h21fb4ff4436abe01
+            151 ┊      0.13% ┊           ⤷ std::sys::thread_local::static_local::LazyStorage<T>::initialize::heb7d7dbf8e353228
+            184 ┊      0.15% ┊       ⤷ alloc::raw_vec::finish_grow::hac166f5fb75e7f3e
+            178 ┊      0.15% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::h6160e6d011594cca
+            154 ┊      0.13% ┊       ⤷ <std::panicking::begin_panic_handler::FormatStringPayload as core::panic::PanicPayload>::get::haee02ad25fe5af95
+            108 ┊      0.09% ┊       ⤷ std::alloc::default_alloc_error_hook::h6a6e006e85058b27
+             81 ┊      0.07% ┊       ⤷ <core::fmt::builders::PadAdapter as core::fmt::Write>::write_char::he0d662c599b86267
+             81 ┊      0.07% ┊       ⤷ <std::panicking::begin_panic_handler::StaticStrPayload as core::panic::PanicPayload>::take_box::hc79329f7ddce4b3c
+             71 ┊      0.06% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_str::h86d7648bc15e71d0
+             71 ┊      0.06% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_str::h86d7648bc15e71d0
+             46 ┊      0.04% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::h165a950c79d05267
+              8 ┊      0.01% ┊           ⤷ type[18]: (i32, i32, i64, i32, i32) -> nil
+             46 ┊      0.04% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::h387c7c2b661ffcd6
+              8 ┊      0.01% ┊           ⤷ type[19]: (i32, i32, f32, i32, i32) -> nil
+             46 ┊      0.04% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::h6915ca6e2cf00299
+              8 ┊      0.01% ┊           ⤷ type[20]: (i32, i32, f64, i32, i32) -> nil
+             44 ┊      0.04% ┊       ⤷ core::ptr::drop_in_place<std::panicking::begin_panic_handler::FormatStringPayload>::h13de3176df7853d1
+             40 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke4_mut::h6f34f358d81f229c
+             38 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::h07b05a0cc6f76204
+             38 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::h4dd776bb114aadc1
+             38 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::h66a8aebd56be2927
+             38 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::hb0fd6f5c2a7531d4
+             38 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke3_mut::hfb43f6df42696e4e
+             37 ┊      0.03% ┊       ⤷ core::fmt::num::imp::<impl core::fmt::Display for i32>::fmt::h999c740fd70c681e
+             37 ┊      0.03% ┊       ⤷ <&T as core::fmt::Debug>::fmt::hc40f63a19f07c1f0
+             36 ┊      0.03% ┊       ⤷ <T as core::any::Any>::type_id::h0911f8d225edfefc
+             36 ┊      0.03% ┊       ⤷ <T as core::any::Any>::type_id::h8bd3687deb684c6e
+             36 ┊      0.03% ┊       ⤷ <T as core::any::Any>::type_id::hde1861e58c8ed746
+             36 ┊      0.03% ┊       ⤷ <T as core::any::Any>::type_id::h3da284f4d19e6ad2
+             34 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke1_mut::hd982d3925b37fd02
+             31 ┊      0.03% ┊       ⤷ core::ptr::drop_in_place<alloc::string::String>::h060a02ff07258182
+             31 ┊      0.03% ┊       ⤷ core::ptr::drop_in_place<alloc::string::String>::h1a5bc818a340eab0
+             27 ┊      0.02% ┊       ⤷ <core::cell::BorrowError as core::fmt::Debug>::fmt::h634cddcd48fb0b59
+             27 ┊      0.02% ┊       ⤷ <core::cell::BorrowMutError as core::fmt::Debug>::fmt::h8a42a6ac72d50168
+             24 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen::JsValue>::h6cec7e1cc65b5a71
+             24 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen::JsValue>::h19327a5bfee19f89
+             24 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen::JsValue>::h19327a5bfee19f89
+             24 ┊      0.02% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen::JsValue>::h19327a5bfee19f89
+             22 ┊      0.02% ┊       ⤷ <&T as core::fmt::Debug>::fmt::h0eca8ded1e7baa42
+             21 ┊      0.02% ┊       ⤷ <std::panicking::begin_panic_handler::StaticStrPayload as core::panic::PanicPayload>::get::h338aaf91d3b1753a
+             19 ┊      0.02% ┊       ⤷ <alloc::string::String as core::fmt::Display>::fmt::h44bfe9bc13060fb1
+             19 ┊      0.02% ┊       ⤷ <&T as core::fmt::Display>::fmt::hb14613b8e99f890f
+             19 ┊      0.02% ┊       ⤷ <alloc::string::String as core::fmt::Display>::fmt::h44bfe9bc13060fb1
+             18 ┊      0.01% ┊       ⤷ <&T as core::fmt::Display>::fmt::h4a2d2f34082c0d41
+             18 ┊      0.01% ┊       ⤷ <core::fmt::Arguments as core::fmt::Display>::fmt::h09bfddffe23f0bd5
+             16 ┊      0.01% ┊       ⤷ <core::fmt::Error as core::fmt::Debug>::fmt::ha90f6ae3e44e85ff
+             16 ┊      0.01% ┊       ⤷ <core::alloc::layout::LayoutError as core::fmt::Debug>::fmt::h5d8dd9ee9f5095b3
+             15 ┊      0.01% ┊       ⤷ core::fmt::num::imp::<impl core::fmt::Display for u32>::fmt::h7225f5a301460e13
+             15 ┊      0.01% ┊       ⤷ core::fmt::Write::write_fmt::h967c82bf2790d925
+             15 ┊      0.01% ┊       ⤷ core::fmt::Write::write_fmt::h75d80f60a787d6f4
+             15 ┊      0.01% ┊       ⤷ core::fmt::Write::write_fmt::hba12c024792dbeed
+             14 ┊      0.01% ┊       ⤷ std::rt::lang_start::{{closure}}::haf5de5c68609434f
+             14 ┊      0.01% ┊       ⤷ core::ops::function::FnOnce::call_once{{vtable.shim}}::h0e0fe99ad44c01b2
+             10 ┊      0.01% ┊       ⤷ type[15]: (i32, i32, i32, i32, i32, i32) -> i32
+              9 ┊      0.01% ┊       ⤷ std::sys_common::backtrace::__rust_begin_short_backtrace::h4a0c8dfd0242484d
+          21057 ┊     17.46% ┊   ⤷ elem[1]
+           5026 ┊      4.17% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::{{closure}}::h6722cf5e5a79cb9d
+           4615 ┊      3.83% ┊           ⤷ <futures_util::future::future::map::Map<Fut,F> as core::future::future::Future>::poll::hc72e763baf8422d9
+           3788 ┊      3.14% ┊               ⤷ <futures_util::abortable::Abortable<Fut> as core::future::future::Future>::poll::h91324a5f1b342e77
+            758 ┊      0.63% ┊                   ⤷ js_sys::Uint8Array::copy_from::h76287833b98bbd4d
+            464 ┊      0.38% ┊                       ⤷ core::panicking::assert_failed::h9429dd698cc95d68
+            406 ┊      0.34% ┊                           ⤷ core::panicking::assert_failed_inner::h7966a70a95c65b5b
+             10 ┊      0.01% ┊                               ⤷ type[16]: (i32, i32, i32, i32, i32, i32, i32) -> nil
+             36 ┊      0.03% ┊                       ⤷ import wbg::__wbg_buffer_b7b08af79b0b0974
+             36 ┊      0.03% ┊                       ⤷ import wbg::__wbg_length_8339fcf5d8ecd12e
+             33 ┊      0.03% ┊                       ⤷ import wbg::__wbg_set_d1e79e2388520f18
+             30 ┊      0.02% ┊                       ⤷ wasm_bindgen::memory::ha1d2c6632cc8e6dd
+             24 ┊      0.02% ┊                           ⤷ import wbg::__wbindgen_memory
+            438 ┊      0.36% ┊                   ⤷ <std::io::error::Error as core::fmt::Display>::fmt::h84715e84b2d05fa7
+            107 ┊      0.09% ┊                   ⤷ core::slice::index::slice_end_index_len_fail::h7917b91b59da861b
+            100 ┊      0.08% ┊                   ⤷ web_sys::features::gen_ReadableStreamByobRequest::ReadableStreamByobRequest::respond_with_u32::he3735d42ffac3f95
+             37 ┊      0.03% ┊                       ⤷ import wbg::__wbg_respond_a799bab31a44f2d7
+             96 ┊      0.08% ┊                   ⤷ web_sys::features::gen_ReadableByteStreamController::ReadableByteStreamController::close::hee77cc9522f52e24
+             35 ┊      0.03% ┊                       ⤷ import wbg::__wbg_close_aca7442e6619206b
+             95 ┊      0.08% ┊                   ⤷ js_sys::Error::new::h857ac797122de14a
+             33 ┊      0.03% ┊                       ⤷ import wbg::__wbg_new_796382978dfd4fb0
+             69 ┊      0.06% ┊                   ⤷ web_sys::features::gen_ReadableByteStreamController::ReadableByteStreamController::byob_request::hc7c3a7c9921a95e7
+             41 ┊      0.03% ┊                       ⤷ import wbg::__wbg_byobRequest_b32c77640da946ac
+             62 ┊      0.05% ┊                   ⤷ web_sys::features::gen_ReadableStreamByobRequest::ReadableStreamByobRequest::view::h950e7c84d863da18
+             34 ┊      0.03% ┊                       ⤷ import wbg::__wbg_view_2a901bda0727aeb3
+             56 ┊      0.05% ┊                   ⤷ import wbg::__wbg_newwithbyteoffsetandlength_8a2cb9ca96b27ec9
+             51 ┊      0.04% ┊                   ⤷ js_sys::Uint8Array::byte_length::h97e55786c526a859
+             40 ┊      0.03% ┊                       ⤷ import wbg::__wbg_byteLength_850664ef28f3e42f
+             51 ┊      0.04% ┊                   ⤷ js_sys::Uint8Array::byte_offset::hfce99dd91a3528bc
+             40 ┊      0.03% ┊                       ⤷ import wbg::__wbg_byteOffset_ea14c35fa6de38cc
+             47 ┊      0.04% ┊                   ⤷ js_sys::Uint8Array::buffer::he07a297688811baa
+             36 ┊      0.03% ┊                       ⤷ import wbg::__wbg_buffer_0710d1b9dbe2eea6
+             15 ┊      0.01% ┊                   ⤷ js_sys::Uint8Array::new_with_byte_offset_and_length::h384478f83219c1a1
+           2287 ┊      1.90% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::{{closure}}::ha1ca5fd41584183c
+           1801 ┊      1.49% ┊           ⤷ <futures_util::future::future::map::Map<Fut,F> as core::future::future::Future>::poll::he01cf22e38c4d332
+           1088 ┊      0.90% ┊               ⤷ <futures_util::abortable::Abortable<Fut> as core::future::future::Future>::poll::hc1b71b12603d33b2
+            103 ┊      0.09% ┊                   ⤷ web_sys::features::gen_ReadableStreamDefaultController::ReadableStreamDefaultController::enqueue_with_chunk::hae1fa751c7750dd4
+             37 ┊      0.03% ┊                       ⤷ import wbg::__wbg_enqueue_6f3d433b5e457aea
+             96 ┊      0.08% ┊                   ⤷ web_sys::features::gen_ReadableStreamDefaultController::ReadableStreamDefaultController::close::h36d7680104f9bf35
+             35 ┊      0.03% ┊                       ⤷ import wbg::__wbg_close_cef2400b120c9c73
+           1190 ┊      0.99% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::{{closure}}::hba886a75b8639803
+            936 ┊      0.78% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::{{closure}}::hd0c6adef678fe131
+            856 ┊      0.71% ┊       ⤷ wasm_bindgen_futures::queue::Queue::schedule_task::h420bbe1222cf7592
+            550 ┊      0.46% ┊           ⤷ alloc::collections::vec_deque::VecDeque<T,A>::grow::h377aec428efa021d
+            401 ┊      0.33% ┊               ⤷ alloc::raw_vec::RawVec<T,A>::grow_one::h2395c5f2f6d61136
+            197 ┊      0.16% ┊                   ⤷ alloc::raw_vec::finish_grow::he8ed8af00e137135
+             50 ┊      0.04% ┊           ⤷ js_sys::Promise::then::hb3db5d8414e7ff3e
+             34 ┊      0.03% ┊               ⤷ import wbg::__wbg_then_95e6edc0f89b73b1
+             44 ┊      0.04% ┊           ⤷ import wbg::__wbg_queueMicrotask_12a30234db4045d3
+            777 ┊      0.64% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen_futures::future_to_promise<wasm_streams::writable::into_underlying_sink::IntoUnderlyingSink::abort::{{closure}}>::{{closure}}::{{closure}}>::h7bc4bb141e0f477c
+            706 ┊      0.59% ┊       ⤷ std::sys::thread_local::static_local::LazyStorage<T>::initialize::hbe9c61e867e5c632
+             49 ┊      0.04% ┊           ⤷ wasm_bindgen::closure::Closure<T>::wrap::breaks_if_inlined::h41c1be88763f7225
+             37 ┊      0.03% ┊               ⤷ import wbg::__wbindgen_closure_wrapper2048
+             48 ┊      0.04% ┊           ⤷ js_sys::Promise::resolve::h912c84934b766a15
+             37 ┊      0.03% ┊               ⤷ import wbg::__wbg_resolve_570458cb99d56a43
+             44 ┊      0.04% ┊           ⤷ import wbg::__wbg_queueMicrotask_48421b3cc9052b68
+             29 ┊      0.02% ┊           ⤷ import wbg::__wbindgen_is_function
+             25 ┊      0.02% ┊           ⤷ import wbg::__wbindgen_cb_drop
+            677 ┊      0.56% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::{{closure}}::h6950a40979ec7973
+            537 ┊      0.45% ┊       ⤷ wasm_bindgen_futures::queue::Queue::new::{{closure}}::he3387b076a2e3a33
+            449 ┊      0.37% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::he3d3a93997d47229
+            447 ┊      0.37% ┊       ⤷ core::ops::function::FnOnce::call_once{{vtable.shim}}::hb64a493f0839e4f5
+            435 ┊      0.36% ┊       ⤷ <alloc::collections::vec_deque::VecDeque<T,A> as core::ops::drop::Drop>::drop::ha3391ab3e1ef09c2
+            433 ┊      0.36% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen_futures::future_to_promise<wasm_streams::writable::into_underlying_sink::IntoUnderlyingSink::close::{{closure}}>::{{closure}}::{{closure}}>::h046c8c21c55f868e
+            384 ┊      0.32% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::h902671f3a2e04f72
+            382 ┊      0.32% ┊       ⤷ core::ops::function::FnOnce::call_once{{vtable.shim}}::h2b7b7b87ffbbcef1
+            378 ┊      0.31% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::h2d35376e6b56f310
+            376 ┊      0.31% ┊       ⤷ core::ops::function::FnOnce::call_once{{vtable.shim}}::h7839838ba197d80f
+            330 ┊      0.27% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_char::h8d02ec1fda94bdf5
+            330 ┊      0.27% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_char::h8d02ec1fda94bdf5
+            310 ┊      0.26% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::h76d30c5c92c817db
+            310 ┊      0.26% ┊       ⤷ wasm_bindgen_futures::future_to_promise::{{closure}}::he3b9edce42a7461f
+            308 ┊      0.26% ┊       ⤷ core::ops::function::FnOnce::call_once{{vtable.shim}}::h0cdeee6571648534
+            308 ┊      0.26% ┊       ⤷ core::ops::function::FnOnce::call_once{{vtable.shim}}::h9f97c3c9ea586cf8
+            301 ┊      0.25% ┊       ⤷ futures_core::task::__internal::atomic_waker::AtomicWaker::register::hb51d7ae84ffccae6
+            197 ┊      0.16% ┊       ⤷ alloc::raw_vec::finish_grow::h0976d7f672ac3157
+            193 ┊      0.16% ┊       ⤷ alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle::ha5027ff87fa3b9e4
+            192 ┊      0.16% ┊       ⤷ wasm_bindgen_futures::task::singlethread::Task::into_raw_waker::raw_wake::h37a50bbc58c1b4d6
+            190 ┊      0.16% ┊       ⤷ alloc::raw_vec::RawVec<T,A>::grow_one::h334ce54131f8206e
+            146 ┊      0.12% ┊       ⤷ wasm_bindgen_futures::task::singlethread::Task::into_raw_waker::raw_drop::h192f536890601e9d
+            134 ┊      0.11% ┊       ⤷ core::ops::function::FnOnce::call_once{{vtable.shim}}::hf969534aee30ad8d
+            115 ┊      0.10% ┊       ⤷ wasm_bindgen_futures::task::singlethread::Task::spawn::h97200fe341917f6b
+            115 ┊      0.10% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen_futures::future_to_promise<futures_util::future::try_future::UnwrapOrElse<futures_util::abortable::Abortable<wasm_streams::readable::into_underlying_byte_source::IntoUnderlyingByteSource::pull::{{closure}}>,wasm_streams::readable::into_underlying_byte_source::IntoUnderlyingByteSource::pull::{{closure}}>>::{{closure}}::{{closure}}>::hd58a58835f0eba60
+            114 ┊      0.09% ┊       ⤷ js_sys::Function::call1::ha583e3ef6442a208
+             34 ┊      0.03% ┊           ⤷ import wbg::__wbg_call_89af060b4e1523f2
+            113 ┊      0.09% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen_futures::future_to_promise<wasm_streams::writable::into_underlying_sink::IntoUnderlyingSink::write::{{closure}}>::{{closure}}::{{closure}}>::hb475b7819505f883
+            113 ┊      0.09% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen_futures::future_to_promise<futures_util::future::try_future::UnwrapOrElse<futures_util::abortable::Abortable<wasm_streams::readable::into_underlying_source::IntoUnderlyingSource::pull::{{closure}}>,wasm_streams::readable::into_underlying_source::IntoUnderlyingSource::pull::{{closure}}>>::{{closure}}::{{closure}}>::h14a9a87e855aa77f
+            105 ┊      0.09% ┊       ⤷ std::panicking::begin_panic::h2e4adb17d7577eb8
+             60 ┊      0.05% ┊           ⤷ std::sys_common::backtrace::__rust_end_short_backtrace::hea083c71ee16faf5
+             50 ┊      0.04% ┊               ⤷ std::panicking::begin_panic::{{closure}}::h6e83c8c4ba5584ca
+            102 ┊      0.08% ┊       ⤷ <std::panicking::begin_panic::Payload<A> as core::panic::PanicPayload>::take_box::h3cd7a38edf343767
+            101 ┊      0.08% ┊       ⤷ core::ptr::drop_in_place<wasm_bindgen_futures::queue::Queue::new::{{closure}}>::h173a7c1cc3d953ab
+             79 ┊      0.07% ┊       ⤷ wasm_bindgen_futures::task::singlethread::Task::into_raw_waker::raw_wake_by_ref::hc825aead80124ddc
+             71 ┊      0.06% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_str::h86d7648bc15e71d0
+             71 ┊      0.06% ┊       ⤷ <alloc::string::String as core::fmt::Write>::write_str::h86d7648bc15e71d0
+             57 ┊      0.05% ┊       ⤷ core::panicking::panic_const::panic_const_async_fn_resumed::h894fce141ae17943
+             56 ┊      0.05% ┊       ⤷ <dyn core::ops::function::FnMut<(A,)>+Output = R as wasm_bindgen::closure::WasmClosure>::describe::destroy::he81911ef6e40fbde
+             51 ┊      0.04% ┊       ⤷ wasm_bindgen_futures::task::singlethread::Task::into_raw_waker::raw_clone::h967d2a12b34f6572
+             36 ┊      0.03% ┊       ⤷ <T as core::any::Any>::type_id::h6418f7f636566db8
+             35 ┊      0.03% ┊       ⤷ <std::panicking::begin_panic::Payload<A> as core::panic::PanicPayload>::get::h19814cbad1c6b69a
+             34 ┊      0.03% ┊       ⤷ wasm_bindgen::convert::closures::invoke1_mut::hcc8770029462a45d
+             31 ┊      0.03% ┊       ⤷ core::ptr::drop_in_place<<alloc::boxed::Box<dyn core::error::Error+core::marker::Send+core::marker::Sync> as core::convert::From<alloc::string::String>>::from::StringError>::h4d8db10ca982d045
+             31 ┊      0.03% ┊       ⤷ core::ptr::drop_in_place<alloc::string::String>::hf211c57873915f63
+             16 ┊      0.01% ┊       ⤷ <core::fmt::Error as core::fmt::Debug>::fmt::ha90f6ae3e44e85ff
+             15 ┊      0.01% ┊       ⤷ core::fmt::Write::write_fmt::h4a6a8c90e2980ffa
+            894 ┊      0.74% ┊   ⤷ core::fmt::Formatter::pad::h250c7f7634420087
+            876 ┊      0.73% ┊   ⤷ core::str::count::do_count_chars::h02b1acee3c2a6348
+            803 ┊      0.67% ┊   ⤷ js_sys::global::hd5def97f0f2dc1dd
+            759 ┊      0.63% ┊       ⤷ std::sys::thread_local::static_local::LazyStorage<T>::initialize::h6ad5b3813b232a2a
+            653 ┊      0.54% ┊           ⤷ js_sys::global::get_global_object::hbc51a13b256dea62
+             40 ┊      0.03% ┊               ⤷ import wbg::__wbg_globalThis_86b222e13bdf32ed
+             39 ┊      0.03% ┊               ⤷ import wbg::__wbg_newnoargs_76313bd6ff35d0f2
+             36 ┊      0.03% ┊               ⤷ import wbg::__wbg_window_3bcfc4d31bc012f8
+             36 ┊      0.03% ┊               ⤷ import wbg::__wbg_global_e5a3fe56f8be9485
+             34 ┊      0.03% ┊               ⤷ import wbg::__wbg_call_1084a111329e68ce
+             34 ┊      0.03% ┊               ⤷ import wbg::__wbg_self_3093d5d1f7bcb682
+             30 ┊      0.02% ┊               ⤷ import wbg::__wbindgen_is_undefined
+            699 ┊      0.58% ┊   ⤷ memmove
+            687 ┊      0.57% ┊       ⤷ compiler_builtins::mem::memmove::he3350aaba1c400e1
+            654 ┊      0.54% ┊   ⤷ core::fmt::write::h42829ca3e0f26f22
+            197 ┊      0.16% ┊   ⤷ memset
+            184 ┊      0.15% ┊       ⤷ compiler_builtins::mem::memset::hdffafbe0f830f43d
+             89 ┊      0.07% ┊   ⤷ wasm_bindgen::__rt::take_last_exception::h31da92f064ef6a2e
+             34 ┊      0.03% ┊   ⤷ import wbg::__wbindgen_object_clone_ref
+             24 ┊      0.02% ┊   ⤷ core::fmt::Formatter::write_str::h176be676e1f58cae
+             12 ┊      0.01% ┊   ⤷ <str as core::fmt::Display>::fmt::h33f13f5a3a1be0ce
+              4 ┊      0.00% ┊   ⤷ type[1]: () -> i32
+          31745 ┊     26.32% ┊ "function names" subsection
+           4631 ┊      3.84% ┊ dlmalloc::dlmalloc::Dlmalloc<A>::malloc::h7d87142bce80bd29
+             59 ┊      0.05% ┊   ⤷ <dlmalloc::sys::System as dlmalloc::Allocator>::alloc::hd0f67e456d688876
+           1561 ┊      1.29% ┊ wasm_bindgen::cache::intern::unsafe_get_str::h0456bcf2b38c3053
+           1499 ┊      1.24% ┊   ⤷ std::thread::local::LocalKey<T>::with::h17455bf03d86bf96
+           1096 ┊      0.91% ┊       ⤷ core::hash::BuildHasher::hash_one::hb4710b9f5d6cc712
+            625 ┊      0.52% ┊           ⤷ <core::hash::sip::Hasher<S> as core::hash::Hasher>::write::h680144a4bd995854
+              7 ┊      0.01% ┊           ⤷ type[9]: (i32, i32, i32) -> i64
+           1244 ┊      1.03% ┊ main
+           1192 ┊      0.99% ┊   ⤷ std::rt::lang_start_internal::hd11826c8b61b0248
+            746 ┊      0.62% ┊       ⤷ std::sys::sync::once::no_threads::Once::call::he1ac6c327db3169f
+            272 ┊      0.23% ┊           ⤷ std::sync::once_lock::OnceLock<T>::initialize::h60c4475fb963ce73
+            203 ┊      0.17% ┊               ⤷ std::sys::sync::once::no_threads::Once::call::h3d9596e5796a8f32
+            136 ┊      0.11% ┊       ⤷ alloc::sync::arcinner_layout_for_value_layout::hfc3ef75f05895224
+             60 ┊      0.05% ┊       ⤷ std::thread::ThreadId::new::exhausted::h29e19d063850e00a
+            896 ┊      0.74% ┊ __rust_realloc
+            875 ┊      0.73% ┊   ⤷ __rdl_realloc
+            764 ┊      0.63% ┊ dlmalloc::dlmalloc::Dlmalloc<A>::free::hd6b7b92e8f462182
+            630 ┊      0.52% ┊ export "intounderlyingsink_abort"
+            602 ┊      0.50% ┊   ⤷ intounderlyingsink_abort
+            451 ┊      0.37% ┊       ⤷ wasm_bindgen_futures::future_to_promise::h9876a49c59b97741
+            499 ┊      0.41% ┊ dlmalloc::dlmalloc::Dlmalloc<A>::dispose_chunk::hfe895838d0e0c8e0
+            495 ┊      0.41% ┊ core::ptr::drop_in_place<futures_util::future::try_future::UnwrapOrElse<futures_util::abortable::Abortable<wasm_streams::readable::into_underlying_byte_source::IntoUnderlyingByteSource::pull::{{closure}}>,wasm_streams::readable::into_underlying_byte_source::IntoUnderlyingByteSource::pull::{{closure}}>>::ha409470474c2a3c3
+            493 ┊      0.41% ┊ export "intounderlyingbytesource_pull"
+            461 ┊      0.38% ┊   ⤷ intounderlyingbytesource_pull
+            452 ┊      0.37% ┊ export "intounderlyingsink_close"
+            424 ┊      0.35% ┊   ⤷ intounderlyingsink_close
+            279 ┊      0.23% ┊       ⤷ wasm_bindgen_futures::future_to_promise::h4ced7252f9b3a7d7
+            436 ┊      0.36% ┊ export "__wbg_intounderlyingsource_free"
+            402 ┊      0.33% ┊   ⤷ __wbg_intounderlyingsource_free
+            426 ┊      0.35% ┊ export "intounderlyingsource_pull"
+            398 ┊      0.33% ┊   ⤷ intounderlyingsource_pull
+            417 ┊      0.35% ┊ core::ptr::drop_in_place<futures_util::future::try_future::UnwrapOrElse<futures_util::abortable::Abortable<wasm_streams::readable::into_underlying_source::IntoUnderlyingSource::pull::{{closure}}>,wasm_streams::readable::into_underlying_source::IntoUnderlyingSource::pull::{{closure}}>>::h3d6fef60e5462849
+            400 ┊      0.33% ┊ export "intounderlyingsource_cancel"
+            370 ┊      0.31% ┊   ⤷ intounderlyingsource_cancel
+            383 ┊      0.32% ┊ core::ptr::drop_in_place<wasm_streams::writable::into_underlying_sink::IntoUnderlyingSink::write::{{closure}}>::hcdc63aeaeba7ec0b
+            380 ┊      0.32% ┊ dlmalloc::dlmalloc::Dlmalloc<A>::unlink_chunk::h63e4838ff5c445a2
+            370 ┊      0.31% ┊ dlmalloc::dlmalloc::Dlmalloc<A>::memalign::h5e1e33ead276ad15
+            370 ┊      0.31% ┊ <alloc::rc::Rc<T,A> as core::ops::drop::Drop>::drop::h9a1bbb1b642ff61e
+            336 ┊      0.28% ┊ memcpy
+            324 ┊      0.27% ┊   ⤷ compiler_builtins::mem::memcpy::h6a01844efc49c0e5
+            334 ┊      0.28% ┊ core::panicking::panic_fmt::hb859252f4b513814
+            272 ┊      0.23% ┊   ⤷ rust_begin_unwind
+            203 ┊      0.17% ┊       ⤷ std::sys_common::backtrace::__rust_end_short_backtrace::h36214b32c979e4c1
+            193 ┊      0.16% ┊           ⤷ std::panicking::begin_panic_handler::{{closure}}::hec06b0d4affd51e6
+            331 ┊      0.27% ┊ dlmalloc::dlmalloc::Dlmalloc<A>::insert_large_chunk::haf9b3a56677ca08a
+            323 ┊      0.27% ┊ <alloc::rc::Rc<T,A> as core::ops::drop::Drop>::drop::hcf42b661c73d1ee7
+            310 ┊      0.26% ┊ core::ptr::drop_in_place<wasm_streams::readable::into_underlying_byte_source::IntoUnderlyingByteSource>::h98fd91a30a048c65
+            309 ┊      0.26% ┊ export "__wbg_intounderlyingsink_free"
+            276 ┊      0.23% ┊   ⤷ __wbg_intounderlyingsink_free
+            294 ┊      0.24% ┊ export "intounderlyingbytesource_type"
+            261 ┊      0.22% ┊   ⤷ intounderlyingbytesource_type
+            279 ┊      0.23% ┊ std::panicking::rust_panic_with_hook::h47bd3d747ed79dc3
+             18 ┊      0.01% ┊   ⤷ rust_panic
+              5 ┊      0.00% ┊       ⤷ __rust_start_panic
+            252 ┊      0.21% ┊ export "intounderlyingsink_write"
+            224 ┊      0.19% ┊   ⤷ intounderlyingsink_write
+            245 ┊      0.20% ┊ export "__wbg_intounderlyingbytesource_free"
+            206 ┊      0.17% ┊   ⤷ __wbg_intounderlyingbytesource_free
+            206 ┊      0.17% ┊ export "intounderlyingbytesource_cancel"
+            171 ┊      0.14% ┊   ⤷ intounderlyingbytesource_cancel
+            201 ┊      0.17% ┊ export "intounderlyingbytesource_start"
+            167 ┊      0.14% ┊   ⤷ intounderlyingbytesource_start
+            196 ┊      0.16% ┊ <alloc::rc::Rc<T,A> as core::ops::drop::Drop>::drop::hbd700a6156e5db54
+            183 ┊      0.15% ┊ export "_ZN136__LT_dyn_u20_core__ops__function__FnMut_LT__LP_A_C__RP__GT__u2b_Output_u20__u3d__u20_R_u20_as_u20_wasm_bindgen__closure__WasmClosure_GT_8describe6invoke17hd299c41ecf5af440E"
+            181 ┊      0.15% ┊ export "intounderlyingbytesource_autoAllocateChunkSize"
+            131 ┊      0.11% ┊   ⤷ intounderlyingbytesource_autoAllocateChunkSize
+            125 ┊      0.10% ┊ core::result::unwrap_failed::h9c8291f73d3ee71a
+            114 ┊      0.09% ┊ __rust_dealloc
+            100 ┊      0.08% ┊   ⤷ __rdl_dealloc
+            100 ┊      0.08% ┊ futures_util::abortable::AbortHandle::new_pair::h36923aa4eba6b383
+             97 ┊      0.08% ┊ futures_util::abortable::AbortHandle::abort::h1d2d922ba1b7d8fc
+             73 ┊      0.06% ┊   ⤷ futures_core::task::__internal::atomic_waker::AtomicWaker::wake::h3849a78ddc3f7902
+             89 ┊      0.07% ┊ memcmp
+             76 ┊      0.06% ┊   ⤷ compiler_builtins::mem::memcmp::h0161c33af60bef75
+             85 ┊      0.07% ┊ export "__wbindgen_malloc"
+             64 ┊      0.05% ┊   ⤷ __wbindgen_malloc
+             83 ┊      0.07% ┊ alloc::raw_vec::handle_error::h604585f1a2687b06
+             60 ┊      0.05% ┊   ⤷ alloc::raw_vec::capacity_overflow::hc809446e6f85bb51
+             81 ┊      0.07% ┊ alloc::sync::Arc<T,A>::drop_slow::hfd53c937aa1c1450
+             78 ┊      0.06% ┊ core::cell::panic_already_borrowed::hf06b3e0f393df82e
+             78 ┊      0.06% ┊ core::cell::panic_already_mutably_borrowed::h445a5bf3c893047c
+             75 ┊      0.06% ┊ export "__wbindgen_realloc"
+             53 ┊      0.04% ┊   ⤷ __wbindgen_realloc
+             71 ┊      0.06% ┊ export "_ZN12wasm_bindgen7convert8closures11invoke2_mut17h38dfe0f3a100d7c4E"
+             68 ┊      0.06% ┊ core::panicking::panic::hff86462b5c0334db
+             67 ┊      0.06% ┊ export "__wbindgen_exn_store"
+             43 ┊      0.04% ┊   ⤷ __wbindgen_exn_store
+             52 ┊      0.04% ┊ alloc::alloc::handle_alloc_error::he71533634a7a5ac5
+             40 ┊      0.03% ┊   ⤷ __rust_alloc_error_handler
+             28 ┊      0.02% ┊       ⤷ __rg_oom
+             48 ┊      0.04% ┊ export "__wbindgen_add_to_stack_pointer"
+             13 ┊      0.01% ┊   ⤷ __wbindgen_add_to_stack_pointer
+             43 ┊      0.04% ┊ __rust_alloc
+             25 ┊      0.02% ┊   ⤷ __rdl_alloc
+             43 ┊      0.04% ┊ js_sys::Promise::new::hb9e184ad746c9331
+             33 ┊      0.03% ┊   ⤷ import wbg::__wbg_new_b85e72ed1bfd57f9
+             40 ┊      0.03% ┊ export "__wbindgen_free"
+             21 ┊      0.02% ┊   ⤷ __wbindgen_free
+             36 ┊      0.03% ┊ wasm_bindgen::convert::closures::invoke2_mut::h38dfe0f3a100d7c4
+             34 ┊      0.03% ┊ <dyn core::ops::function::FnMut<(A,)>+Output = R as wasm_bindgen::closure::WasmClosure>::describe::invoke::hd299c41ecf5af440
+             34 ┊      0.03% ┊ wasm_bindgen::throw_str::h449ee6dc80cfd8fa
+             23 ┊      0.02% ┊   ⤷ import wbg::__wbindgen_throw
+             33 ┊      0.03% ┊ import wbg::__wbindgen_object_drop_ref
+             33 ┊      0.03% ┊ export "__wbindgen_start"
+             13 ┊      0.01% ┊   ⤷ code[288]
+             32 ┊      0.03% ┊ data[1]
+             31 ┊      0.03% ┊ "module name" subsection
+             22 ┊      0.02% ┊ export "__wbindgen_export_2"
+             18 ┊      0.01% ┊ custom section '.debug_line_str' headers
+             18 ┊      0.01% ┊ custom section '.debug_rnglists' headers
+             18 ┊      0.01% ┊ custom section '.debug_loclists' headers
+             18 ┊      0.01% ┊ custom section 'target_features' headers
+             17 ┊      0.01% ┊ core::option::unwrap_failed::h3135ea563cdcf5b2
+             16 ┊      0.01% ┊ wasm_bindgen::__rt::borrow_fail::ha1aee352c4012e90
+             16 ┊      0.01% ┊ custom section '.debug_abbrev' headers
+             16 ┊      0.01% ┊ custom section '.debug_ranges' headers
+             15 ┊      0.01% ┊ wasm_bindgen::__rt::throw_null::h6cc38a277b4b99d1
+             15 ┊      0.01% ┊ custom section '.debug_frame' headers
+             14 ┊      0.01% ┊ custom section '.debug_line' headers
+             14 ┊      0.01% ┊ custom section '.debug_info' headers
+             13 ┊      0.01% ┊ custom section '.debug_str' headers
+             13 ┊      0.01% ┊ custom section '.debug_loc' headers
+             12 ┊      0.01% ┊ custom section 'producers' headers
+             12 ┊      0.01% ┊ custom section '.eh_frame' headers
+             11 ┊      0.01% ┊ export "memory"
+              2 ┊      0.00% ┊   ⤷ memory[0]
+             11 ┊      0.01% ┊ code section headers
+              9 ┊      0.01% ┊ type[13]: (i32, i32, i32, i32, i32) -> i32
+              9 ┊      0.01% ┊ type[14]: (i32, i32, i32, i32, i32, i32) -> nil
+              9 ┊      0.01% ┊ custom section 'name' headers
+              8 ┊      0.01% ┊ type[11]: (i32, i32, i32, i32) -> i32
+              8 ┊      0.01% ┊ type[12]: (i32, i32, i32, i32, i32) -> nil
+              8 ┊      0.01% ┊ global[0]
+              8 ┊      0.01% ┊ export "main"
+              8 ┊      0.01% ┊ wasm_bindgen::__rt::malloc_failure::hf02886614f590e98
+              8 ┊      0.01% ┊ wasm magic bytes
+              7 ┊      0.01% ┊ type[8]: (i32, i32, i32) -> i32
+              7 ┊      0.01% ┊ type[10]: (i32, i32, i32, i32) -> nil
+              6 ┊      0.00% ┊ type[5]: (i32, i32) -> i32
+              6 ┊      0.00% ┊ type[7]: (i32, i32, i32) -> nil
+              5 ┊      0.00% ┊ type[3]: (i32) -> i32
+              5 ┊      0.00% ┊ type[4]: (i32, i32) -> nil
+              5 ┊      0.00% ┊ std::process::abort::hf4455f66b24b9537
+              4 ┊      0.00% ┊ type[2]: (i32) -> nil
+              4 ┊      0.00% ┊ type section headers
+              4 ┊      0.00% ┊ import section headers
+              4 ┊      0.00% ┊ export section headers
+              4 ┊      0.00% ┊ element section headers
+              4 ┊      0.00% ┊ data section headers
+              3 ┊      0.00% ┊ type[0]: () -> nil
+              3 ┊      0.00% ┊ table section headers
+              3 ┊      0.00% ┊ memory section headers
+              3 ┊      0.00% ┊ global section headers
+           9666 ┊      8.02% ┊ [17 Unreachable Items]
