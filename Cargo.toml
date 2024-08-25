@@ -5,6 +5,5 @@ edition = "2021"
 [dependencies]
 leptos = { version = "0.6.14", features = ["csr"] }
 unic-langid-impl = { path = "../unic-locale/unic-langid-impl" }
-wasm-bindgen = "0.2.68"
 
 [workspace]
