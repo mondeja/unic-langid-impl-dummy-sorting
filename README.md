@@ -2,13 +2,13 @@
 
 - Previous results (`.dedup()` + `.sort_unstable()`): *dominators-with-sort.txt* (13057 bytes)
 - Results after commenting out `.sort_unstable()`: *dominators-without-sort.txt* (3595 bytes)
-- Results after patch: *dominators-after-patch.txt* (3620 bytes)
+- Results after patch: *dominators-after-patch.txt* (3439 bytes)
 
 Search for `unic_langid_impl::LanguageIdentifier::from_bytes` in the files.
 
 ## How to reproduce
 
-1. Clone the unic-langid-impl and put in the same directory as this repository.
+1. Clone the unic-locale repository and put in the same directory as this repository.
 1. Install [trunk.rs](https://trunkrs.dev/) with `cargo install trunk`.
 1. Install [twiggy](https://github.com/rustwasm/twiggy) with `cargo install twiggy`.
 1. Run `trunk build --release`.
